@@ -3,1048 +3,160 @@
 
 <head>
 
-    <!--==================================================
-                    CONFIGURACIÓN GENERAL
-    ===================================================-->
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta http-equiv="X-UA-Compatible"
-          content="IE=edge">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>
-        CAL Solutions | Desarrollo de Soluciones Tecnológicas
-    </title>
+    <title>CAL Solutions | Desarrollo de Software</title>
 
     <meta name="description"
-          content="CAL Solutions desarrolla software empresarial, sistemas para hospitales, clínicas, consultorios, empresas y comercios. Soluciones modernas, seguras y escalables.">
+        content="Desarrollamos Soluciones, Transformamos Procesos.">
 
-    <meta name="keywords"
-          content="CAL Solutions, Software Empresarial, Historia Clínica Electrónica, CAL HCE, Punto de Venta, ERP, Desarrollo de Software, .NET, PostgreSQL, México, Chiapas">
+    <link rel="icon" href="img/favicon.png">
 
-    <meta name="author"
-          content="CAL Solutions">
+    <!-- Google Fonts -->
 
-    <meta name="robots"
-          content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <meta name="theme-color"
-          content="#2563EB">
-
-    <link rel="icon"
-          href="img/favicon.png"
-          type="image/png">
-
-    <!--==================================================
-                    GOOGLE FONTS
-    ===================================================-->
-
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
 
-    <!--==================================================
-                    FONT AWESOME
-    ===================================================-->
+    <!-- Font Awesome -->
 
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!--==================================================
-                    ESTILOS
-    ===================================================-->
+    <!-- CSS -->
 
-    <link rel="stylesheet"
-          href="estilos.css">
+    <link rel="stylesheet" href="estilos.css">
 
 </head>
 
 <body>
-<!--==================================================
-                    HEADER
-===================================================-->
 
-<header id="header">
+    <!--=========================================================
+    HEADER
+==========================================================-->
 
-    <div class="contenedor menu">
+<header id="inicio">
 
-        <!--================ LOGO =================-->
+    <div class="contenedor">
 
-        <a href="#inicio"
-           class="logo"
-           aria-label="CAL Solutions">
+        <div class="menu">
 
-            <img src="img/logo.png"
-                 alt="Logo CAL Solutions">
+            <!-- Logo -->
 
-        </a>
+            <a href="#inicio" class="logo">
 
-        <!--================ MENÚ =================-->
+                <img src="img/logo.png" alt="CAL Solutions">
 
-        <nav>
+            </a>
 
-            <a href="#inicio">Inicio</a>
+            <!-- Navegación -->
 
-            <a href="#nosotros">Nosotros</a>
+            <nav>
 
-            <a href="#servicios">Servicios</a>
+                <a href="#inicio">Inicio</a>
 
-            <a href="#productos">Productos</a>
+                <a href="#servicios">Servicios</a>
 
-            <a href="#hce">CAL HCE</a>
+                <a href="#productos">Productos</a>
 
-            <a href="#capturas">Capturas</a>
+                <a href="#nosotros">Nosotros</a>
 
-            <a href="#contacto">Contacto</a>
+                <a href="#contacto">Contacto</a>
 
-        </nav>
+            </nav>
 
-        <!--================ BOTÓN =================-->
+            <!-- Botón -->
 
-        <a href="#contacto"
-           class="btn-header">
+            <a href="https://wa.me/529681198483" class="btn-header">
 
-            <i class="fa-solid fa-laptop-medical"></i>
+                <i class="fa-brands fa-whatsapp"></i>
 
-            Solicitar Demo
+                Solicitar Demo
 
-        </a>
+            </a>
+
+        </div>
 
     </div>
 
 </header>
-<!--==================================================
-                    HERO
-===================================================-->
+<!--=========================================================
+    HERO
+==========================================================-->
 
-<section class="hero"
-         id="inicio">
+<section class="hero">
 
-    <div class="contenedor hero-grid">
+    <div class="contenedor">
 
-        <!--================ TEXTO =================-->
+        <div class="hero-grid">
 
-        <div class="hero-texto">
+            <!-- Texto -->
 
-            <span class="hero-etiqueta">
+            <div class="hero-texto">
 
-                Software Empresarial • Sector Salud • Tecnología 100% Mexicana
-
-            </span>
-
-            <h1>
-
-                Soluciones de software que impulsan el crecimiento de tu organización.
-
-            </h1>
-
-            <p>
-
-                En <strong>CAL Solutions</strong> desarrollamos software empresarial
-                para consultorios, clínicas, hospitales y empresas. Nuestras
-                soluciones están diseñadas para optimizar procesos, centralizar
-                información y facilitar la toma de decisiones mediante tecnología
-                moderna, segura y escalable.
-
-            </p>
-
-            <div class="hero-datos">
-
-                <span>
-
-                    <i class="fa-solid fa-circle-check"></i>
-
-                    Desarrollo 100% Propio
-
+                <span class="hero-etiqueta">
+                    <i class="fa-solid fa-code"></i>
+                    Desarrollo de Software Profesional
                 </span>
 
-                <span>
-
-                    <i class="fa-solid fa-circle-check"></i>
-
-                    Microsoft .NET
-
-                </span>
-
-                <span>
-
-                    <i class="fa-solid fa-circle-check"></i>
-
-                    PostgreSQL
-
-                </span>
-
-            </div>
-
-            <div class="hero-botones">
-
-                <a href="#productos"
-                   class="btn btn-azul">
-
-                    Ver Soluciones
-
-                </a>
-
-                <a href="#contacto"
-                   class="btn btn-blanco">
-
-                    Solicitar Demostración
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <!--================ IMAGEN =================-->
-
-        <div class="hero-imagen">
-
-            <div class="pantalla">
-
-                <div class="pantalla-top">
-
-                    <span class="rojo"></span>
-
-                    <span class="amarillo"></span>
-
-                    <span class="verde"></span>
-
-                </div>
-
-                <img src="img/hce/dashboard-principal.jpeg"
-                     alt="Dashboard principal de CAL HCE">
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!--==================================================
-                ESTADÍSTICAS
-===================================================-->
-
-<section class="estadisticas">
-
-    <div class="contenedor stats-grid">
-
-        <article class="stat">
-
-            <h2>3</h2>
-
-            <p>Soluciones Tecnológicas</p>
-
-        </article>
-
-        <article class="stat">
-
-            <h2>.NET</h2>
-
-            <p>Tecnología Microsoft</p>
-
-        </article>
-
-        <article class="stat">
-
-            <h2>PostgreSQL</h2>
-
-            <p>Base de Datos Empresarial</p>
-
-        </article>
-
-        <article class="stat">
-
-            <h2>100%</h2>
-
-            <p>Desarrollo Propio</p>
-
-        </article>
-
-    </div>
-
-</section>
-
-<!--==================================================
-                    NOSOTROS
-===================================================-->
-
-<section class="nosotros"
-         id="nosotros">
-
-    <div class="contenedor">
-
-        <div class="titulo">
-
-            <span class="subtitulo">
-
-                ¿QUIÉNES SOMOS?
-
-            </span>
-
-            <h2>
-
-                Tecnología que simplifica el trabajo diario.
-
-            </h2>
-
-            <p>
-
-                En <strong>CAL Solutions</strong> desarrollamos soluciones de
-                software que ayudan a empresas, consultorios, clínicas y
-                hospitales a optimizar procesos mediante aplicaciones modernas,
-                intuitivas y seguras.
-
-            </p>
-
-        </div>
-
-        <div class="nosotros-grid">
-
-            <!--================ IMAGEN =================-->
-
-            <div class="nosotros-imagen">
-
-                <img src="img/hce/dashboard-principal.jpeg"
-                     alt="Dashboard principal de CAL HCE">
-
-            </div>
-
-            <!--================ TEXTO =================-->
-
-            <div class="nosotros-texto">
-
-                <h3>
-
-                    Creamos software pensado para las personas.
-
-                </h3>
+                <h1>
+                    Desarrollamos  Soluciones
+                    <span>Transformamos Procesos.</span>
+                </h1>
 
                 <p>
 
-                    Nuestro objetivo es transformar procesos mediante tecnología
-                    confiable, facilitando la administración de información y
-                    mejorando la productividad de cada organización.
+                    En CAL Solutions desarrollamos software moderno para
+                    hospitales, clínicas, consultorios, empresas y comercios.
+                    Creamos sistemas seguros, rápidos y adaptados a las
+                    necesidades de cada cliente.
 
                 </p>
 
-                <p>
+                <div class="hero-botones">
 
-                    Nuestro producto principal,
-                    <strong>CAL HCE</strong>,
-                    integra expedientes clínicos electrónicos, consultas médicas,
-                    pacientes, recetas profesionales, estadísticas, respaldos y
-                    herramientas administrativas dentro de una plataforma moderna
-                    y fácil de utilizar.
+                    <a href="#productos" class="btn btn-azul">
 
-                </p>
+                        Ver Productos
 
-                <div class="nosotros-lista">
+                    </a>
 
-                    <div>
+                    <a href="#contacto" class="btn btn-blanco">
 
-                        <i class="fa-solid fa-check"></i>
-
-                        Desarrollo 100% Propio
-
-                    </div>
-
-                    <div>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Microsoft .NET
-
-                    </div>
-
-                    <div>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        PostgreSQL
-
-                    </div>
-
-                    <div>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Historia Clínica Electrónica
-
-                    </div>
-
-                    <div>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Punto de Venta Empresarial
-
-                    </div>
-
-                    <div>
-
-                        <i class="fa-solid fa-check"></i>
-
-                        Aplicaciones Android
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--==================================================
-                    NUESTROS VALORES
-===================================================-->
-
-<section class="valores">
-
-    <div class="contenedor">
-
-        <div class="titulo">
-
-            <span class="subtitulo">
-
-                NUESTROS VALORES
-
-            </span>
-
-            <h2>
-
-                La base de cada solución que desarrollamos
-
-            </h2>
-
-            <p>
-
-                En CAL Solutions trabajamos con principios que garantizan
-                software confiable, seguro y preparado para evolucionar junto
-                con las necesidades de nuestros clientes.
-
-            </p>
-
-        </div>
-
-        <div class="valores-grid">
-
-            <!--================ INNOVACIÓN =================-->
-
-            <article class="valor-card">
-
-                <div class="valor-icono">
-
-                    <i class="fa-solid fa-lightbulb"></i>
-
-                </div>
-
-                <h3>
-
-                    Innovación
-
-                </h3>
-
-                <p>
-
-                    Desarrollamos soluciones utilizando tecnologías modernas,
-                    metodologías ágiles y una mejora continua enfocada en generar
-                    valor para cada organización.
-
-                </p>
-
-            </article>
-
-            <!--================ SEGURIDAD =================-->
-
-            <article class="valor-card">
-
-                <div class="valor-icono">
-
-                    <i class="fa-solid fa-shield-halved"></i>
-
-                </div>
-
-                <h3>
-
-                    Seguridad
-
-                </h3>
-
-                <p>
-
-                    Protegemos la información mediante arquitecturas robustas,
-                    buenas prácticas de desarrollo y tecnologías confiables para
-                    garantizar la integridad de los datos.
-
-                </p>
-
-            </article>
-
-            <!--================ ESCALABILIDAD =================-->
-
-            <article class="valor-card">
-
-                <div class="valor-icono">
-
-                    <i class="fa-solid fa-chart-line"></i>
-
-                </div>
-
-                <h3>
-
-                    Escalabilidad
-
-                </h3>
-
-                <p>
-
-                    Creamos software preparado para crecer junto con empresas,
-                    consultorios, clínicas y hospitales, adaptándose a nuevas
-                    necesidades sin perder rendimiento.
-
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-<!--==================================================
-                    SERVICIOS
-===================================================-->
-
-<section class="servicios"
-         id="servicios">
-
-    <div class="contenedor">
-
-        <div class="titulo">
-
-            <span class="subtitulo">
-
-                LO QUE HACEMOS
-
-            </span>
-
-            <h2>
-
-                Soluciones tecnológicas desarrolladas para transformar procesos
-
-            </h2>
-
-            <p>
-
-                En CAL Solutions diseñamos, desarrollamos e implementamos
-                software moderno para empresas, consultorios, clínicas y
-                hospitales, utilizando tecnologías robustas, seguras y
-                escalables.
-
-            </p>
-
-        </div>
-
-        <div class="servicios-grid">
-
-            <!--================================-->
-
-            <article class="servicio-card">
-
-                <div class="icono-servicio">
-
-                    <i class="fa-solid fa-laptop-code"></i>
-
-                </div>
-
-                <h3>
-
-                    Desarrollo de Software
-
-                </h3>
-
-                <p>
-
-                    Aplicaciones de escritorio, web y móviles desarrolladas
-                    completamente a la medida de cada organización.
-
-                </p>
-
-            </article>
-
-            <!--================================-->
-
-            <article class="servicio-card">
-
-                <div class="icono-servicio">
-
-                    <i class="fa-solid fa-user-doctor"></i>
-
-                </div>
-
-                <h3>
-
-                    Software para el Sector Salud
-
-                </h3>
-
-                <p>
-
-                    Sistemas especializados para consultorios, clínicas y
-                    hospitales, orientados a mejorar la atención médica y la
-                    administración clínica.
-
-                </p>
-
-            </article>
-
-            <!--================================-->
-
-            <article class="servicio-card">
-
-                <div class="icono-servicio">
-
-                    <i class="fa-solid fa-gears"></i>
-
-                </div>
-
-                <h3>
-
-                    Automatización de Procesos
-
-                </h3>
-
-                <p>
-
-                    Transformamos procesos manuales en flujos digitales para
-                    aumentar la productividad y reducir tiempos operativos.
-
-                </p>
-
-            </article>
-
-            <!--================================-->
-
-            <article class="servicio-card">
-
-                <div class="icono-servicio">
-
-                    <i class="fa-solid fa-database"></i>
-
-                </div>
-
-                <h3>
-
-                    Bases de Datos Empresariales
-
-                </h3>
-
-                <p>
-
-                    Diseño, implementación y optimización de bases de datos
-                    PostgreSQL y SQL Server para aplicaciones empresariales.
-
-                </p>
-
-            </article>
-
-            <!--================================-->
-
-            <article class="servicio-card">
-
-                <div class="icono-servicio">
-
-                    <i class="fa-solid fa-code-branch"></i>
-
-                </div>
-
-                <h3>
-
-                    Integración de Sistemas
-
-                </h3>
-
-                <p>
-
-                    Conectamos aplicaciones, procesos y bases de datos para
-                    centralizar la información y mejorar la operación diaria.
-
-                </p>
-
-            </article>
-
-            <!--================================-->
-
-            <article class="servicio-card">
-
-                <div class="icono-servicio">
-
-                    <i class="fa-solid fa-headset"></i>
-
-                </div>
-
-                <h3>
-
-                    Soporte y Evolución
-
-                </h3>
-
-                <p>
-
-                    Acompañamiento técnico continuo mediante mantenimiento,
-                    mejoras, actualizaciones y soporte especializado.
-
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-<!--==================================================
-                    PRODUCTOS
-===================================================-->
-
-<section class="productos"
-         id="productos">
-
-    <div class="contenedor">
-
-        <div class="titulo">
-
-            <span class="subtitulo">
-
-                NUESTROS PRODUCTOS
-
-            </span>
-
-            <h2>
-
-                Soluciones desarrolladas por CAL Solutions
-
-            </h2>
-
-            <p>
-
-                Cada producto ha sido diseñado para resolver necesidades reales,
-                utilizando tecnologías modernas, interfaces intuitivas y una
-                arquitectura preparada para crecer junto con tu organización.
-
-            </p>
-
-        </div>
-
-        <div class="productos-grid">
-
-            <!--================ CAL HCE =================-->
-
-            <article class="producto-card">
-
-                <img src="img/hce/dashboard-principal.jpeg"
-                     alt="CAL HCE">
-
-                <div class="producto-info">
-
-                    <span class="categoria">
-
-                        Sector Salud
-
-                    </span>
-
-                    <h3>
-
-                        CAL HCE
-
-                    </h3>
-
-                    <p>
-
-                        Sistema de Historia Clínica Electrónica desarrollado para
-                        consultorios, clínicas y hospitales.
-
-                    </p>
-
-                    <ul>
-
-                        <li><i class="fa-solid fa-check"></i> Expediente Clínico Electrónico</li>
-
-                        <li><i class="fa-solid fa-check"></i> Consulta Médica</li>
-
-                        <li><i class="fa-solid fa-check"></i> Recetas Profesionales PDF</li>
-
-                        <li><i class="fa-solid fa-check"></i> Estadísticas y Reportes</li>
-
-                        <li><i class="fa-solid fa-check"></i> Respaldo Automático</li>
-
-                        <li><i class="fa-solid fa-check"></i> Bitácora de Auditoría</li>
-
-                    </ul>
-
-                    <a href="#capturas"
-                       class="btn btn-azul">
-
-                        Ver el Sistema
+                        Solicitar Información
 
                     </a>
 
                 </div>
 
-            </article>
+                <div class="hero-datos">
 
-            <!--================ CAL POS =================-->
-
-            <article class="producto-card">
-
-                <img src="img/pos/dashboard-pos.jpeg"
-                     alt="CAL POS">
-
-                <div class="producto-info">
-
-                    <span class="categoria">
-
-                        Comercio
-
+                    <span>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Software Seguro
                     </span>
 
-                    <h3>
-
-                        CAL POS
-
-                    </h3>
-
-                    <p>
-
-                        Punto de venta profesional diseñado para controlar ventas,
-                        inventario, clientes y reportes desde una sola plataforma.
-
-                    </p>
-
-                    <ul>
-
-                        <li><i class="fa-solid fa-check"></i> Ventas</li>
-
-                        <li><i class="fa-solid fa-check"></i> Inventario</li>
-
-                        <li><i class="fa-solid fa-check"></i> Clientes</li>
-
-                        <li><i class="fa-solid fa-check"></i> Reportes</li>
-
-                        <li><i class="fa-solid fa-check"></i> Cortes de Caja</li>
-
-                        <li><i class="fa-solid fa-check"></i> Multiusuario</li>
-
-                    </ul>
-
-                    <a href="pos.html"
-                       class="btn btn-azul">
-
-                        Conocer Más
-
-                    </a>
-
-                </div>
-
-            </article>
-
-            <!--================ CAL CATÁLOGO =================-->
-
-            <article class="producto-card">
-
-                <img src="img/catalogo/dashboard-catalogo.jpeg"
-                     alt="CAL Catálogo">
-
-                <div class="producto-info">
-
-                    <span class="categoria">
-
-                        Android
-
+                    <span>
+                        <i class="fa-solid fa-rocket"></i>
+                        Alto Rendimiento
                     </span>
 
-                    <h3>
-
-                        CAL Catálogo
-
-                    </h3>
-
-                    <p>
-
-                        Aplicación Android para consultar productos de forma rápida,
-                        organizada y sin necesidad de conexión permanente.
-
-                    </p>
-
-                    <ul>
-
-                        <li><i class="fa-solid fa-check"></i> Android</li>
-
-                        <li><i class="fa-solid fa-check"></i> Catálogo Digital</li>
-
-                        <li><i class="fa-solid fa-check"></i> Búsqueda Inteligente</li>
-
-                        <li><i class="fa-solid fa-check"></i> Fotografías</li>
-
-                        <li><i class="fa-solid fa-check"></i> Organización por categorías</li>
-
-                        <li><i class="fa-solid fa-check"></i> Fácil actualización</li>
-
-                    </ul>
-
-                    <a href="catalogo.html"
-                       class="btn btn-azul">
-
-                        Conocer Más
-
-                    </a>
+                    <span>
+                        <i class="fa-solid fa-headset"></i>
+                        Soporte Personalizado
+                    </span>
 
                 </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-<!--==================================================
-                    CAL HCE
-===================================================-->
-
-<section class="hce"
-         id="hce">
-
-    <div class="contenedor">
-
-        <div class="titulo">
-
-            <span class="subtitulo">
-
-                PRODUCTO DESTACADO
-
-            </span>
-
-            <h2>
-
-                CAL HCE · Historia Clínica Electrónica
-
-            </h2>
-
-            <p>
-
-                Una plataforma integral desarrollada para consultorios, clínicas
-                y hospitales que permite administrar expedientes clínicos,
-                consultas médicas, recetas, estadísticas y configuraciones desde
-                una interfaz moderna, intuitiva y segura.
-
-            </p>
-
-        </div>
-
-        <div class="hce-grid">
-
-            <!--================ TEXTO =================-->
-
-            <div class="hce-texto">
-
-                <h3>
-
-                    Todo el proceso clínico en un solo sistema.
-
-                </h3>
-
-                <p>
-
-                    CAL HCE centraliza la información médica para facilitar el
-                    trabajo diario del personal de salud, agilizar la atención al
-                    paciente y mantener organizada toda la información clínica
-                    mediante una plataforma desarrollada completamente por
-                    CAL Solutions.
-
-                </p>
-
-                <div class="hce-lista">
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Expediente Clínico Electrónico
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Consulta Médica Completa
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Historia Clínica
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Signos Vitales
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Recetas Profesionales en PDF
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Estudios Médicos
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Estadísticas e Indicadores
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Gestión de Usuarios y Roles
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Respaldos Automáticos
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                        Bitácora de Auditoría
-                    </div>
-
-                </div>
-
-                <a href="#capturas"
-                   class="btn btn-azul">
-
-                    Explorar Capturas
-
-                </a>
 
             </div>
 
-            <!--================ IMAGEN =================-->
+            <!-- Imagen -->
 
-            <div class="hce-imagen">
+            <div class="hero-imagen">
 
                 <div class="pantalla">
 
@@ -1056,8 +168,9 @@
 
                     </div>
 
-                    <img src="img/hce/dashboard-principal.jpeg"
-                         alt="Dashboard principal de CAL HCE">
+                    <img
+                        src="img/dashboard-principal.jpeg"
+                        alt="Sistema CAL Solutions">
 
                 </div>
 
@@ -1068,254 +181,92 @@
     </div>
 
 </section>
-<!--==================================================
-                CAPTURAS DEL SISTEMA
-===================================================-->
+<!--=========================================================
+    SERVICIOS
+==========================================================-->
 
-<section class="capturas"
-         id="capturas">
+<section class="servicios" id="servicios">
 
     <div class="contenedor">
 
         <div class="titulo">
 
             <span class="subtitulo">
-
-                CONOCE CAL HCE
-
+                Nuestros Servicios
             </span>
 
             <h2>
-
-                Un sistema moderno, intuitivo y completo
-
+                Soluciones tecnológicas para cada necesidad
             </h2>
 
             <p>
-
-                Explora algunas de las principales pantallas de CAL HCE.
-                Cada módulo fue diseñado para agilizar la atención médica y
-                facilitar la administración clínica.
-
+                Desarrollamos software moderno para empresas, hospitales,
+                consultorios y comercios, adaptándonos completamente a tus
+                procesos de trabajo.
             </p>
 
         </div>
 
-        <div class="capturas-grid">
+        <div class="servicios-grid">
 
-            <!-- LOGIN -->
-            <article class="captura-card">
+            <article class="servicio-card">
 
-                <img src="img/hce/login.jpeg"
-                     alt="Inicio de sesión">
-
-                <div class="captura-info">
-
-                    <h3>Inicio de Sesión</h3>
-
-                    <p>
-                        Acceso seguro mediante autenticación de usuarios y control de permisos.
-                    </p>
-
+                <div class="icono-servicio">
+                    <i class="fa-solid fa-laptop-code"></i>
                 </div>
+
+                <h3>Software a Medida</h3>
+
+                <p>
+                    Sistemas desarrollados específicamente para tu empresa,
+                    optimizando procesos y aumentando la productividad.
+                </p>
 
             </article>
 
-            <!-- DASHBOARD -->
-            <article class="captura-card">
+            <article class="servicio-card">
 
-                <img src="img/hce/dashboard-principal.jpeg"
-                     alt="Dashboard">
-
-                <div class="captura-info">
-
-                    <h3>Dashboard Principal</h3>
-
-                    <p>
-                        Indicadores, actividad reciente y accesos rápidos desde una sola pantalla.
-                    </p>
-
+                <div class="icono-servicio">
+                    <i class="fa-solid fa-hospital"></i>
                 </div>
+
+                <h3>Sector Salud</h3>
+
+                <p>
+                    Soluciones para hospitales, clínicas y consultorios con expedientes clínicos,
+                    recetas digitales y administración,
+                     desarrolladas conforme a la normativa mexicana aplicable..
+                </p>
 
             </article>
 
-            <!-- PACIENTES -->
-            <article class="captura-card">
+            <article class="servicio-card">
 
-                <img src="img/hce/lista-pacientes.jpeg"
-                     alt="Pacientes">
-
-                <div class="captura-info">
-
-                    <h3>Lista de Pacientes</h3>
-
-                    <p>
-                        Administración completa del padrón de pacientes.
-                    </p>
-
+                <div class="icono-servicio">
+                    <i class="fa-solid fa-store"></i>
                 </div>
+
+                <h3>Comercios</h3>
+
+                <p>
+                    Sistemas punto de venta, inventarios, ventas y control
+                    administrativo para negocios de cualquier tamaño.
+                </p>
 
             </article>
 
-            <!-- EXPEDIENTE -->
-            <article class="captura-card">
+            <article class="servicio-card">
 
-                <img src="img/hce/expedientes.jpeg"
-                     alt="Expediente">
-
-                <div class="captura-info">
-
-                    <h3>Expediente Clínico</h3>
-
-                    <p>
-                        Consulta rápida de toda la información clínica del paciente.
-                    </p>
-
+                <div class="icono-servicio">
+                    <i class="fa-solid fa-headset"></i>
                 </div>
 
-            </article>
+                <h3>Soporte y Capacitación</h3>
 
-            <!-- CONSULTA -->
-            <article class="captura-card">
-
-                <img src="img/hce/consulta-medica.jpeg"
-                     alt="Consulta">
-
-                <div class="captura-info">
-
-                    <h3>Consulta Médica</h3>
-
-                    <p>
-                        Registro completo de la atención médica.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- HISTORIA -->
-            <article class="captura-card">
-
-                <img src="img/hce/historia-clinica.jpeg"
-                     alt="Historia Clínica">
-
-                <div class="captura-info">
-
-                    <h3>Historia Clínica</h3>
-
-                    <p>
-                        Antecedentes médicos organizados en un solo lugar.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- SIGNOS -->
-            <article class="captura-card">
-
-                <img src="img/hce/signos-vitales.jpeg"
-                     alt="Signos Vitales">
-
-                <div class="captura-info">
-
-                    <h3>Signos Vitales</h3>
-
-                    <p>
-                        Captura y seguimiento de parámetros clínicos.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- RECETA -->
-            <article class="captura-card">
-
-                <img src="img/hce/recetas.jpeg"
-                     alt="Recetas">
-
-                <div class="captura-info">
-
-                    <h3>Recetas Médicas</h3>
-
-                    <p>
-                        Generación automática de recetas profesionales en PDF.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- ESTADÍSTICAS -->
-            <article class="captura-card">
-
-                <img src="img/hce/estadisticas.jpeg"
-                     alt="Estadísticas">
-
-                <div class="captura-info">
-
-                    <h3>Estadísticas</h3>
-
-                    <p>
-                        Indicadores para el seguimiento de la operación clínica.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- RESPALDOS -->
-            <article class="captura-card">
-
-                <img src="img/hce/respaldo.jpeg"
-                     alt="Respaldos">
-
-                <div class="captura-info">
-
-                    <h3>Respaldos</h3>
-
-                    <p>
-                        Generación de respaldos de la información del sistema.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- CONFIGURACIÓN -->
-            <article class="captura-card">
-
-                <img src="img/hce/configuracion-sistema.jpeg"
-                     alt="Configuración">
-
-                <div class="captura-info">
-
-                    <h3>Configuración</h3>
-
-                    <p>
-                        Administración general de parámetros del sistema.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <!-- BITÁCORA -->
-            <article class="captura-card">
-
-                <img src="img/hce/bitacora.jpeg"
-                     alt="Bitácora">
-
-                <div class="captura-info">
-
-                    <h3>Bitácora</h3>
-
-                    <p>
-                        Registro de eventos y acciones realizadas por los usuarios.
-                    </p>
-
-                </div>
+                <p>
+                    Acompañamiento antes, durante y después de la implementación
+                    para que aproveches al máximo tu sistema.
+                </p>
 
             </article>
 
@@ -1324,520 +275,244 @@
     </div>
 
 </section>
-<!--==================================================
-                    CAL HCE
-===================================================-->
+<!--=========================================================
+    PRODUCTOS
+==========================================================-->
 
-<section class="hce" id="hce">
+<section class="productos" id="productos">
 
     <div class="contenedor">
 
         <div class="titulo">
 
             <span class="subtitulo">
-
-                CAL HCE EN ACCIÓN
-
+                Nuestros Productos
             </span>
 
             <h2>
-
-                Diseñado para el trabajo diario del profesional de la salud
-
+                Soluciones desarrolladas por CAL Solutions
             </h2>
 
             <p>
-
-                Cada módulo de CAL HCE ha sido desarrollado para agilizar la
-                consulta médica, reducir tiempos administrativos y mantener la
-                información clínica organizada y segura.
-
+                Software diseñado para mejorar la administración, optimizar procesos
+                y facilitar el crecimiento de empresas, clínicas y comercios.
             </p>
 
         </div>
 
-        <!--================ CONSULTA MÉDICA =================-->
+        <div class="productos-grid">
 
-        <div class="grid-hce">
+            <!-- CAL HCE -->
 
-            <div class="imagen-hce">
+            <article class="producto-card">
 
-                <img src="img/hce/consulta-medica.jpeg"
-                     alt="Consulta Médica">
+                <img src="img/login.png" alt="CAL HCE">
 
-            </div>
+                <div class="producto-info">
 
-            <div class="texto-hce">
+                    <span class="categoria">
+                        Sector Salud
+                    </span>
 
-                <h3>
+                    <h3>CAL HCE</h3>
 
-                    Consulta Médica Completa
+                    <p>
 
-                </h3>
+                        Sistema de Historia Clínica Electrónica para hospitales,
+                        clínicas y consultorios médicos alineado con la normativa mexicana.
 
-                <p>
+                    </p>
 
-                    Registra toda la atención médica desde una interfaz intuitiva,
-                    incluyendo motivo de consulta, padecimiento actual,
-                    exploración física, diagnósticos y tratamiento.
+                    <ul>
 
-                </p>
+                        <li>Expediente clínico</li>
 
-                <ul>
+                        <li>Recetas digitales</li>
 
-                    <li>✔ Consulta estructurada</li>
+                        <li>Agenda médica</li>
 
-                    <li>✔ Diagnósticos</li>
+                        <li>Reportes y respaldos</li>
 
-                    <li>✔ Tratamiento</li>
+                    </ul>
 
-                    <li>✔ Evolución clínica</li>
+                    <a href="#contacto" class="btn btn-azul">
+                        Solicitar Información
+                    </a>
 
-                </ul>
+                </div>
 
-            </div>
+            </article>
 
-        </div>
+            <!-- CAL POS -->
 
-        <!--================ HISTORIA CLÍNICA =================-->
+            <article class="producto-card">
 
-        <div class="grid-hce reverse">
+                <img src="img/CAL POS.png" alt="CAL POS">
 
-            <div class="texto-hce">
+                <div class="producto-info">
 
-                <h3>
+                    <span class="categoria">
+                        Comercios
+                    </span>
 
-                    Historia Clínica Integral
+                    <h3>CAL POS</h3>
 
-                </h3>
+                    <p>
 
-                <p>
+                        Punto de venta moderno para controlar ventas,
+                        inventario y administración del negocio.
 
-                    Mantén organizados los antecedentes personales,
-                    familiares y médicos del paciente conforme a un
-                    expediente clínico electrónico moderno.
+                    </p>
 
-                </p>
+                    <ul>
 
-                <ul>
+                        <li>Ventas rápidas</li>
 
-                    <li>✔ Antecedentes</li>
+                        <li>Inventarios</li>
 
-                    <li>✔ Exploración Física</li>
+                        <li>Clientes y proveedores</li>
 
-                    <li>✔ Signos Vitales</li>
+                        <li>Reportes administrativos</li>
 
-                    <li>✔ Seguimiento</li>
+                    </ul>
 
-                </ul>
+                    <a href="#contacto" class="btn btn-azul">
+                        Solicitar Información
+                    </a>
 
-            </div>
+                </div>
 
-            <div class="imagen-hce">
+            </article>
 
-                <img src="img/hce/historia-clinica.jpeg"
-                     alt="Historia Clínica">
+            <!-- CAL CATÁLOGO -->
 
-            </div>
+            <article class="producto-card">
 
-        </div>
+                <img src="img/Cal Catalogo.png" alt="CAL Catálogo">
 
-        <!--================ RECETAS =================-->
+                <div class="producto-info">
 
-        <div class="grid-hce">
+                    <span class="categoria">
+                        Ventas
+                    </span>
 
-            <div class="imagen-hce">
+                    <h3>CAL Catálogo</h3>
 
-                <img src="img/hce/visor-receta.jpeg"
-                     alt="Recetas PDF">
+                    <p>
 
-            </div>
+                        Aplicación móvil para mostrar productos,
+                        compartir catálogos y facilitar las ventas.
 
-            <div class="texto-hce">
+                    </p>
 
-                <h3>
+                    <ul>
 
-                    Recetas Profesionales
+                        <li>Catálogo digital</li>
 
-                </h3>
+                        <li>Búsqueda rápida</li>
 
-                <p>
+                        <li>Compartir por WhatsApp</li>
 
-                    Generación automática de recetas médicas profesionales,
-                    listas para imprimir o guardar en PDF con los datos del
-                    consultorio y del médico.
+                        <li>Interfaz moderna</li>
 
-                </p>
+                    </ul>
 
-                <ul>
+                    <a href="#contacto" class="btn btn-azul">
+                        Solicitar Información
+                    </a>
 
-                    <li>✔ PDF Profesional</li>
+                </div>
 
-                    <li>✔ Datos del Médico</li>
-
-                    <li>✔ Firma</li>
-
-                    <li>✔ Impresión inmediata</li>
-
-                </ul>
-
-            </div>
+            </article>
 
         </div>
 
     </div>
 
 </section>
-<!--==================================================
-                    GALERÍA CAL HCE
-===================================================-->
+<!--=========================================================
+    CÓMO TRABAJAMOS
+==========================================================-->
 
-<section class="capturas" id="capturas">
+<section class="proceso">
 
     <div class="contenedor">
 
         <div class="titulo">
 
             <span class="subtitulo">
-                CONOCE EL SISTEMA
+                Nuestra Metodología
             </span>
 
             <h2>
-                CAL HCE en funcionamiento
+                Desarrollamos software pensando en tu negocio
             </h2>
 
             <p>
-                Explora algunas de las pantallas principales de nuestra Historia
-                Clínica Electrónica desarrollada para consultorios, clínicas y hospitales.
+                Cada proyecto sigue un proceso claro para entregar soluciones
+                modernas, seguras y fáciles de utilizar.
             </p>
 
         </div>
 
-        <div class="capturas-grid">
+        <div class="proceso-grid">
 
-            <article class="captura-card">
-                <img src="img/hce/login.jpeg" alt="Login">
-                <div class="captura-info">
-                    <h3>Inicio de Sesión</h3>
-                    <p>Acceso seguro mediante autenticación y control de usuarios.</p>
-                </div>
-            </article>
+            <article class="paso">
 
-            <article class="captura-card">
-                <img src="img/hce/dashboard.jpeg" alt="Dashboard">
-                <div class="captura-info">
-                    <h3>Dashboard</h3>
-                    <p>Resumen general de pacientes, consultas y actividad del sistema.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/lista-pacientes.jpeg" alt="Pacientes">
-                <div class="captura-info">
-                    <h3>Lista de Pacientes</h3>
-                    <p>Consulta rápida del padrón completo de pacientes registrados.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/alta-paciente.jpeg" alt="Alta Paciente">
-                <div class="captura-info">
-                    <h3>Alta de Pacientes</h3>
-                    <p>Registro completo de nuevos pacientes con información clínica.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/consulta-medica.jpeg" alt="Consulta Médica">
-                <div class="captura-info">
-                    <h3>Consulta Médica</h3>
-                    <p>Captura de la consulta con un flujo intuitivo y organizado.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/historia-clinica.jpeg" alt="Historia Clínica">
-                <div class="captura-info">
-                    <h3>Historia Clínica</h3>
-                    <p>Antecedentes completos del paciente en un solo lugar.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/signos-vitales.jpeg" alt="Signos Vitales">
-                <div class="captura-info">
-                    <h3>Signos Vitales</h3>
-                    <p>Registro detallado de constantes vitales durante la consulta.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/exploracion-fisica.jpeg" alt="Exploración Física">
-                <div class="captura-info">
-                    <h3>Exploración Física</h3>
-                    <p>Captura estructurada de la valoración física del paciente.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/diagnosticos.jpeg" alt="Diagnósticos">
-                <div class="captura-info">
-                    <h3>Diagnósticos</h3>
-                    <p>Registro de diagnósticos clínicos y seguimiento médico.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/tratamiento.jpeg" alt="Tratamiento">
-                <div class="captura-info">
-                    <h3>Tratamiento</h3>
-                    <p>Plan terapéutico documentado de forma clara y ordenada.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/recetas.jpeg" alt="Recetas">
-                <div class="captura-info">
-                    <h3>Recetas Médicas</h3>
-                    <p>Generación automática de recetas profesionales listas para imprimir.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/visor-receta.jpeg" alt="Visor Receta">
-                <div class="captura-info">
-                    <h3>Vista Previa de Receta</h3>
-                    <p>Visualización del documento antes de imprimir o exportar a PDF.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/estadisticas.jpeg" alt="Estadísticas">
-                <div class="captura-info">
-                    <h3>Estadísticas</h3>
-                    <p>Indicadores para apoyar la toma de decisiones clínicas.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/respaldo.jpeg" alt="Respaldos">
-                <div class="captura-info">
-                    <h3>Respaldos</h3>
-                    <p>Creación de copias de seguridad de la base de datos.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/bitacora.jpeg" alt="Bitácora">
-                <div class="captura-info">
-                    <h3>Bitácora</h3>
-                    <p>Registro de acciones realizadas por los usuarios.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/configuracion-medico.jpeg" alt="Configuración Médico">
-                <div class="captura-info">
-                    <h3>Configuración del Médico</h3>
-                    <p>Personalización de información profesional y recetas.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/configuracion-consultorio.jpeg" alt="Consultorio">
-                <div class="captura-info">
-                    <h3>Configuración del Consultorio</h3>
-                    <p>Datos del establecimiento utilizados en documentos oficiales.</p>
-                </div>
-            </article>
-
-            <article class="captura-card">
-                <img src="img/hce/configuracion-sistema.jpeg" alt="Sistema">
-                <div class="captura-info">
-                    <h3>Configuración del Sistema</h3>
-                    <p>Parámetros generales, respaldos y comportamiento del sistema.</p>
-                </div>
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-<!--==================================================
-                    TECNOLOGÍAS
-===================================================-->
-
-<section class="tecnologias">
-
-    <div class="contenedor">
-
-        <div class="titulo">
-
-            <span class="subtitulo">
-
-                TECNOLOGÍAS
-
-            </span>
-
-            <h2>
-
-                Desarrollado con tecnologías modernas y robustas
-
-            </h2>
-
-            <p>
-
-                CAL Solutions desarrolla software utilizando herramientas
-                profesionales que garantizan rendimiento, seguridad,
-                estabilidad y facilidad de mantenimiento.
-
-            </p>
-
-        </div>
-
-        <div class="tech">
-
-            <span>.NET 10</span>
-
-            <span>C#</span>
-
-            <span>WPF</span>
-
-            <span>PostgreSQL</span>
-
-            <span>Npgsql</span>
-
-            <span>QuestPDF</span>
-
-            <span>HTML5</span>
-
-            <span>CSS3</span>
-
-            <span>JavaScript</span>
-
-            <span>GitHub</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--==================================================
-                    BENEFICIOS
-===================================================-->
-
-<section class="beneficios">
-
-    <div class="contenedor">
-
-        <div class="titulo">
-
-            <span class="subtitulo">
-
-                ¿POR QUÉ ELEGIR CAL SOLUTIONS?
-
-            </span>
-
-            <h2>
-
-                Software diseñado para crecer con tu organización
-
-            </h2>
-
-            <p>
-
-                Nuestras soluciones están desarrolladas para optimizar procesos,
-                mejorar la productividad y brindar una experiencia moderna,
-                segura y confiable.
-
-            </p>
-
-        </div>
-
-        <div class="cards-beneficios">
-
-            <article>
-
-                <div class="icono">
-                    ⚡
+                <div class="numero">
+                    01
                 </div>
 
-                <h3>
-
-                    Mayor Productividad
-
-                </h3>
+                <h3>Analizamos</h3>
 
                 <p>
-
-                    Automatiza tareas repetitivas y reduce tiempos
-                    administrativos.
-
+                    Escuchamos tus necesidades y entendemos cómo funciona tu
+                    empresa antes de escribir una sola línea de código.
                 </p>
 
             </article>
 
-            <article>
+            <article class="paso">
 
-                <div class="icono">
-                    🔒
+                <div class="numero">
+                    02
                 </div>
 
-                <h3>
-
-                    Información Segura
-
-                </h3>
+                <h3>Diseñamos</h3>
 
                 <p>
-
-                    Protección de datos mediante autenticación,
-                    respaldos y arquitectura moderna.
-
+                    Creamos una solución moderna, intuitiva y adaptada a tu
+                    forma de trabajar.
                 </p>
 
             </article>
 
-            <article>
+            <article class="paso">
 
-                <div class="icono">
-                    🚀
+                <div class="numero">
+                    03
                 </div>
 
-                <h3>
-
-                    Alto Rendimiento
-
-                </h3>
+                <h3>Desarrollamos</h3>
 
                 <p>
-
-                    Aplicaciones rápidas, estables y preparadas
-                    para crecer junto con tu empresa.
-
+                    Programamos utilizando tecnologías actuales para garantizar
+                    rendimiento, estabilidad y seguridad.
                 </p>
 
             </article>
 
-            <article>
+            <article class="paso">
 
-                <div class="icono">
-                    🤝
+                <div class="numero">
+                    04
                 </div>
 
-                <h3>
-
-                    Soporte Continuo
-
-                </h3>
+                <h3>Te acompañamos</h3>
 
                 <p>
-
-                    Acompañamiento durante la implementación,
-                    capacitación y evolución del sistema.
-
+                    Capacitación, soporte y mejoras continuas para que tu
+                    inversión siga creciendo contigo.
                 </p>
 
             </article>
@@ -1847,47 +522,50 @@
     </div>
 
 </section>
-<!--==================================================
-                    CTA FINAL
-===================================================-->
+<!--=========================================================
+    CTA
+==========================================================-->
 
-<section class="cta-final">
+<section class="cta" id="contacto">
 
     <div class="contenedor">
 
         <span class="subtitulo">
 
-            CAL SOLUTIONS
+            Comencemos hoy
 
         </span>
 
         <h2>
 
-            Transforma la manera en que gestionas tu organización.
+            ¿Listo para llevar tu empresa al siguiente nivel?
 
         </h2>
 
         <p>
 
-            Desde consultorios médicos hasta empresas comerciales, desarrollamos
-            soluciones tecnológicas modernas que automatizan procesos, centralizan
-            la información y mejoran la productividad.
+            En CAL Solutions desarrollamos software moderno y a la medida para empresas,
+            hospitales, clínicas, consultorios y comercios. Cuéntanos tu
+            proyecto y trabajemos juntos para convertir tus ideas en una
+            solución tecnológica.
 
         </p>
 
         <div class="hero-botones">
 
-            <a href="#contacto"
-               class="btn btn-azul">
+            <a href="https://wa.me/529681198483" class="btn btn-blanco">
 
-                Solicitar una demostración
+                <i class="fa-brands fa-whatsapp"></i>
+
+                WhatsApp
 
             </a>
 
-            <a href="#productos"
-               class="btn btn-blanco">
+            <a href="mailto:contacto@calsolutions.mx" class="btn btn-azul">
 
-                Explorar soluciones
+                <i class="fa-solid fa-envelope"></i>
+
+                Enviar Correo
 
             </a>
 
@@ -1896,239 +574,119 @@
     </div>
 
 </section>
-
-<!--==================================================
-                    CONTACTO
-===================================================-->
-
-<section class="contacto"
-         id="contacto">
-
-    <div class="contenedor">
-
-        <div class="titulo">
-
-            <span class="subtitulo">
-
-                CONTÁCTANOS
-
-            </span>
-
-            <h2>
-
-                Estamos listos para ayudarte
-
-            </h2>
-
-            <p>
-
-                Agenda una demostración de CAL HCE o cuéntanos tu proyecto.
-                Diseñaremos una solución adaptada a las necesidades de tu organización.
-
-            </p>
-
-        </div>
-
-        <div class="contacto-grid">
-
-            <div class="contacto-info">
-
-                <h3>
-
-                    Información de contacto
-
-                </h3>
-
-                <p>
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    Cintalapa, Chiapas, México
-
-                </p>
-
-                <p>
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    cal_solution@outlook.com
-
-                </p>
-
-                <p>
-
-                    <i class="fa-brands fa-whatsapp"></i>
-
-                    +52 968 119 8483
-
-                </p>
-
-                <p>
-
-                    <i class="fa-solid fa-laptop-code"></i>
-
-                    Desarrollo de Software Empresarial
-
-                </p>
-
-            </div>
-
-            <div class="contacto-acciones">
-
-                <a href="https://wa.me/5219681198483"
-                   target="_blank"
-                   class="btn btn-azul">
-
-                    <i class="fa-brands fa-whatsapp"></i>
-
-                    Solicitar Demo
-
-                </a>
-
-                <a href="mailto:cal_solution@outlook.com"
-                   class="btn btn-blanco">
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    Enviar correo
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--==================================================
-                    BOTÓN WHATSAPP
-===================================================-->
-
-<a href="https://wa.me/5219681198483"
-   class="whatsapp"
-   target="_blank"
-   aria-label="WhatsApp">
-
-    <i class="fa-brands fa-whatsapp"></i>
-
-</a>
-
-<!--==================================================
-                VOLVER ARRIBA
-===================================================-->
-
-<a href="#inicio"
-   class="volver-arriba"
-   aria-label="Volver arriba">
-
-    <i class="fa-solid fa-arrow-up"></i>
-
-</a>
-
-<!--==================================================
-                    FOOTER
-===================================================-->
+<!--=========================================================
+    FOOTER
+==========================================================-->
 
 <footer>
 
-    <div class="contenedor footer">
+    <div class="contenedor">
 
-        <div class="footer-logo">
+        <div class="footer">
 
-            <img src="img/logo.png"
-                 alt="CAL Solutions">
+            <!-- Empresa -->
 
-            <p>
+            <div class="footer-col">
 
-                Desarrollamos soluciones.<br>
-                Transformamos procesos.
+                <img src="img/logo-blanco.png"
+                     alt="CAL Solutions"
+                     class="footer-logo">
 
-            </p>
+                <p>
+                    Desarrollamos soluciones
+                    Transformamos procesos.
+                </p>
 
-        </div>
+                <div class="redes">
 
-        <div>
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
 
-            <h4>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
 
-                Navegación
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
 
-            </h4>
+                    <a href="#" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
 
-            <a href="#inicio">Inicio</a><br>
+                </div>
 
-            <a href="#nosotros">Nosotros</a><br>
+            </div>
 
-            <a href="#servicios">Servicios</a><br>
+            <!-- Navegación -->
 
-            <a href="#productos">Productos</a><br>
+            <div class="footer-col">
 
-            <a href="#hce">CAL HCE</a><br>
+                <h3>Empresa</h3>
 
-            <a href="#capturas">Galería</a><br>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
 
-            <a href="#contacto">Contacto</a>
+            </div>
 
-        </div>
+            <!-- Contacto -->
 
-        <div>
+            <div class="footer-col">
 
-            <h4>
+                <h3>Contacto</h3>
 
-                Tecnologías
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    contacto@calsolutions.mx
+                </p>
 
-            </h4>
+                <p>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +52 968 119 8483
+                </p>
 
-            <p>.NET 10</p>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Cintalapa, Chiapas, México
+                </p>
 
-            <p>C#</p>
-
-            <p>WPF</p>
-
-            <p>PostgreSQL</p>
-
-            <p>QuestPDF</p>
-
-            <p>HTML5 · CSS3 · JavaScript</p>
-
-        </div>
-
-        <div>
-
-            <h4>
-
-                Productos
-
-            </h4>
-
-            <p>CAL HCE</p>
-
-            <p>CAL POS</p>
-
-            <p>CAL Catálogo</p>
-
-            <p>Software a la medida</p>
+            </div>
 
         </div>
 
-    </div>
+        <div class="copyright">
 
-    <div class="copyright">
+            © 2026 CAL Solutions. Todos los derechos reservados.
 
-        © 2026 CAL Solutions · Todos los derechos reservados.
+        </div>
 
     </div>
 
 </footer>
 
-<!--==================================================
-                    JAVASCRIPT
-===================================================-->
+       <!--=========================================================
+        BOTÓN WHATSAPP
+    ==========================================================-->
 
-<script src="js/script.js"></script>
+    <a
+        href="https://wa.me/529681198483"
+        class="whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp">
+
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+    <!--=========================================================
+        JAVASCRIPT
+    ==========================================================-->
+    
+    <script src="script.js"></script>
 
 </body>
-
 </html>

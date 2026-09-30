@@ -1,15 +1,17 @@
 // ==========================================
-// GRUPO CAL
-// script.js v2.0
+// CAL SOLUTIONS
+// script.js v3.0
 // ==========================================
 
 console.clear();
 
-console.log("========================================");
-console.log("        BIENVENIDO A GRUPO CAL");
-console.log(" Desarrollamos soluciones.");
-console.log(" Transformamos procesos.");
-console.log("========================================");
+console.log(`
+========================================
+        CAL SOLUTIONS
+Desarrollamos soluciones.
+Transformamos procesos.
+========================================
+`);
 
 
 // ==========================================
@@ -52,13 +54,14 @@ window.addEventListener("scroll", () => {
 
         header.style.background = "rgba(255,255,255,.96)";
         header.style.backdropFilter = "blur(20px)";
+        header.style.webkitBackdropFilter = "blur(20px)";
         header.style.boxShadow = "0 12px 30px rgba(0,0,0,.08)";
 
-    }
+    } else {
 
-    else{
-
-        header.style.background = "rgba(255,255,255,.88)";
+        header.style.background = "rgba(255,255,255,.90)";
+        header.style.backdropFilter = "blur(14px)";
+        header.style.webkitBackdropFilter = "blur(14px)";
         header.style.boxShadow = "0 8px 30px rgba(0,0,0,.06)";
 
     }
@@ -70,49 +73,53 @@ window.addEventListener("scroll", () => {
 // ANIMACIÓN DE ENTRADA
 // ==========================================
 
-if ("IntersectionObserver" in window){
+if ("IntersectionObserver" in window) {
 
     const elementos = document.querySelectorAll(
 
-        "section, .card, .hero-texto, .hero-imagen"
+        ".hero-texto, .hero-imagen, .servicio-card, .producto-card, .paso, footer"
 
     );
 
     const observador = new IntersectionObserver(
 
-        (entradas)=>{
+        (entradas) => {
 
-            entradas.forEach((entrada)=>{
+            entradas.forEach((entrada) => {
 
-                if(entrada.isIntersecting){
+                if (!entrada.isIntersecting) return;
 
-                    entrada.target.animate([
+                entrada.target.animate(
+
+                    [
 
                         {
 
-                            opacity:0,
-                            transform:"translateY(35px)"
+                            opacity: 0,
+                            transform: "translateY(35px)"
 
                         },
 
                         {
 
-                            opacity:1,
-                            transform:"translateY(0px)"
+                            opacity: 1,
+                            transform: "translateY(0)"
 
                         }
 
-                    ],{
+                    ],
 
-                        duration:700,
-                        easing:"ease-out",
-                        fill:"forwards"
+                    {
 
-                    });
+                        duration: 700,
+                        easing: "ease-out",
+                        fill: "forwards"
 
-                    observador.unobserve(entrada.target);
+                    }
 
-                }
+                );
+
+                observador.unobserve(entrada.target);
 
             });
 
@@ -120,13 +127,13 @@ if ("IntersectionObserver" in window){
 
         {
 
-            threshold:.15
+            threshold: .15
 
         }
 
     );
 
-    elementos.forEach((elemento)=>{
+    elementos.forEach(elemento => {
 
         observador.observe(elemento);
 
@@ -136,55 +143,33 @@ if ("IntersectionObserver" in window){
 
 
 // ==========================================
-// BOTONES
-// ==========================================
-
-document.querySelectorAll(".btn").forEach((boton)=>{
-
-    boton.addEventListener("mouseenter",()=>{
-
-        boton.style.transform="translateY(-6px)";
-
-    });
-
-    boton.addEventListener("mouseleave",()=>{
-
-        boton.style.transform="translateY(0px)";
-
-    });
-
-});
-
-
-// ==========================================
 // MENÚ ACTIVO
 // ==========================================
 
-const secciones = document.querySelectorAll("section");
-
+const secciones = document.querySelectorAll("section[id]");
 const enlaces = document.querySelectorAll("nav a");
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll", () => {
 
-    let actual="";
+    let actual = "";
 
-    secciones.forEach((seccion)=>{
+    secciones.forEach((seccion) => {
 
-        const top = seccion.offsetTop-150;
+        const top = seccion.offsetTop - 150;
 
-        if(window.scrollY>=top){
+        if (window.scrollY >= top) {
 
-            actual=seccion.getAttribute("id");
+            actual = seccion.id;
 
         }
 
     });
 
-    enlaces.forEach((link)=>{
+    enlaces.forEach((link) => {
 
         link.classList.remove("activo");
 
-        if(link.getAttribute("href")==="#"+actual){
+        if (link.getAttribute("href") === "#" + actual) {
 
             link.classList.add("activo");
 
@@ -199,11 +184,11 @@ window.addEventListener("scroll",()=>{
 // AÑO AUTOMÁTICO
 // ==========================================
 
-const anio=document.getElementById("anio");
+const anio = document.getElementById("anio");
 
-if(anio){
+if (anio) {
 
-    anio.textContent=new Date().getFullYear();
+    anio.textContent = new Date().getFullYear();
 
 }
 
@@ -212,9 +197,9 @@ if(anio){
 // SITIO CARGADO
 // ==========================================
 
-window.addEventListener("load",()=>{
+window.addEventListener("load", () => {
 
-    console.log("Sitio cargado correctamente.");
+    console.log("✔ Sitio cargado correctamente.");
 
 });
 
