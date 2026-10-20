@@ -77,7 +77,7 @@ if ("IntersectionObserver" in window) {
 
     const elementos = document.querySelectorAll(
 
-        ".hero-texto, .hero-imagen, .servicio-card, .producto-card, .paso, footer"
+        ".hero-texto, .hero-imagen, .servicio-card, .producto-card, .recetas-texto, .recetas-visor, .paso, footer"
 
     );
 

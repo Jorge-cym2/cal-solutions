@@ -110,7 +110,8 @@ header{
 
 .logo img{
 
-    width:185px;
+    height:72px;
+    width:auto;
 
 }
 
@@ -962,7 +963,7 @@ footer{
 
 .footer-logo{
 
-    width:180px;
+    width:130px;
 
     margin-bottom:20px;
 
@@ -1258,4 +1259,486 @@ RESPONSIVE
 
 .producto-card:hover .producto-img img{
     transform:scale(1.05);
+}
+
+/*=========================================================
+CAL RECETAS LITE (carrusel)
+=========================================================*/
+
+.recetas{
+    background:var(--claro);
+    overflow:hidden;
+}
+
+.recetas-grid{
+    display:grid;
+    grid-template-columns:minmax(0,.8fr) minmax(0,1.3fr);
+    gap:70px;
+    align-items:center;
+}
+
+.recetas-etiquetas{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:18px;
+}
+
+.recetas-etiquetas .categoria{
+    margin-bottom:0;
+}
+
+.rx-nuevo{
+    background:var(--azul);
+    color:#FFF;
+    font-size:.8rem;
+    font-weight:700;
+    padding:7px 16px;
+    border-radius:50px;
+}
+
+.recetas-texto h2{
+    font-size:clamp(2.2rem,4vw,3.2rem);
+    line-height:1.15;
+    margin-bottom:20px;
+}
+
+.recetas-lead{
+    color:var(--gris);
+    font-size:1.08rem;
+    max-width:520px;
+}
+
+.recetas-lista{
+    list-style:none;
+    margin:30px 0 0;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.recetas-lista li{
+    display:flex;
+    gap:12px;
+    font-weight:500;
+}
+
+.recetas-lista i{
+    color:var(--azul);
+    margin-top:6px;
+}
+
+.recetas-botones{
+    margin-bottom:0;
+}
+
+/* ---------- Carrusel ---------- */
+
+.rx-carrusel{
+    background:#FFF;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 35px 70px rgba(15,23,42,.15);
+    border:1px solid var(--borde);
+}
+
+.rx-carrusel:focus-visible,
+.rx-carrusel button:focus-visible,
+.rx-modal button:focus-visible{
+    outline:3px solid var(--azul);
+    outline-offset:-3px;
+}
+
+.rx-carrusel .pantalla-top{
+    height:45px;
+}
+
+.rx-contador{
+    margin-left:auto;
+    font-size:.82rem;
+    font-weight:600;
+    color:var(--gris);
+}
+
+.rx-escenario{
+    position:relative;
+    aspect-ratio:16/10;
+    background:#EAF1FB;
+    overflow:hidden;
+    touch-action:pan-y;
+}
+
+.rx-slide{
+    position:absolute;
+    inset:0;
+    margin:0;
+    opacity:0;
+    visibility:hidden;
+    transition:opacity .7s ease, visibility 0s linear .7s;
+    cursor:zoom-in;
+}
+
+.rx-slide.activa{
+    opacity:1;
+    visibility:visible;
+    transition:opacity .7s ease;
+}
+
+/* fondo difuminado con la misma imagen, para que ninguna captura se vea con huecos */
+.rx-slide::before{
+    content:"";
+    position:absolute;
+    inset:-30px;
+    background:var(--fondo) center/cover;
+    filter:blur(26px) saturate(1.1);
+    opacity:.55;
+}
+
+.rx-slide img{
+    position:relative;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    padding:22px 22px 22px;
+    filter:drop-shadow(0 10px 24px rgba(15,23,42,.18));
+    transform:scale(1.045);
+    transition:transform 7s ease-out;
+}
+
+.rx-slide.activa img{
+    transform:scale(1);
+}
+
+.rx-flecha,
+.rx-ampliar{
+    position:absolute;
+    z-index:2;
+    width:46px;
+    height:46px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.92);
+    color:var(--oscuro);
+    font-size:1rem;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(15,23,42,.18);
+    transition:var(--transicion);
+}
+
+.rx-flecha{
+    top:50%;
+    margin-top:-23px;
+}
+
+.rx-prev{left:16px;}
+.rx-next{right:16px;}
+
+.rx-ampliar{
+    top:14px;
+    right:14px;
+    width:38px;
+    height:38px;
+    font-size:.85rem;
+}
+
+.rx-flecha:hover,
+.rx-ampliar:hover{
+    background:var(--azul);
+    color:#FFF;
+}
+
+.rx-pie{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:18px 16px;
+    align-items:center;
+    padding:22px 26px 24px;
+}
+
+.rx-leyenda{
+    grid-column:1 / -1;
+    min-height:92px;
+}
+
+.rx-leyenda h3{
+    font-size:1.25rem;
+    margin-bottom:4px;
+}
+
+.rx-leyenda p{
+    color:var(--gris);
+    font-size:.96rem;
+    line-height:1.65;
+    max-width:640px;
+}
+
+.rx-leyenda.cambia{
+    animation:rx-aparece .5s ease both;
+}
+
+@keyframes rx-aparece{
+    from{opacity:0; transform:translateY(8px);}
+    to{opacity:1; transform:none;}
+}
+
+/* puntos con barra de progreso */
+
+.rx-puntos{
+    display:flex;
+    gap:7px;
+}
+
+.rx-punto{
+    position:relative;
+    flex:0 0 auto;
+    width:22px;
+    height:8px;
+    padding:0;
+    border:none;
+    border-radius:8px;
+    background:var(--borde);
+    cursor:pointer;
+    overflow:hidden;
+    transition:width .35s ease, background .3s;
+}
+
+.rx-punto:hover{
+    background:#CBD5E1;
+}
+
+.rx-punto.activa{
+    width:48px;
+    background:var(--azul-claro);
+}
+
+.rx-punto i{
+    position:absolute;
+    inset:0;
+    background:var(--azul);
+    transform:scaleX(0);
+    transform-origin:left;
+}
+
+.rx-punto.activa i{
+    animation:rx-progreso var(--rx-dur,6s) linear forwards;
+}
+
+.rx-carrusel.en-pausa .rx-punto.activa i{
+    animation-play-state:paused;
+}
+
+.rx-carrusel.sin-auto .rx-punto.activa i{
+    animation:none;
+    transform:scaleX(1);
+}
+
+@keyframes rx-progreso{
+    to{transform:scaleX(1);}
+}
+
+.rx-pausa{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:1px solid var(--borde);
+    background:#FFF;
+    color:var(--oscuro);
+    font-size:.8rem;
+    cursor:pointer;
+    transition:var(--transicion);
+}
+
+.rx-pausa:hover{
+    background:var(--azul);
+    border-color:var(--azul);
+    color:#FFF;
+}
+
+.rx-carrusel.sin-auto .rx-pausa{
+    display:none;
+}
+
+/* ---------- Vista ampliada ---------- */
+
+.rx-modal{
+    border:none;
+    background:transparent;
+    max-width:none;
+    max-height:none;
+    width:100%;
+    height:100%;
+    padding:24px;
+    margin:0;
+    overflow:hidden;
+}
+
+.rx-modal[open]{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.rx-modal::backdrop{
+    background:rgba(15,23,42,.88);
+    backdrop-filter:blur(6px);
+}
+
+.rx-modal img{
+    max-width:min(1500px,94vw);
+    max-height:90vh;
+    width:auto;
+    height:auto;
+    border-radius:14px;
+    background:#FFF;
+    box-shadow:0 30px 80px rgba(0,0,0,.5);
+}
+
+.rx-cerrar{
+    position:absolute;
+    top:20px;
+    right:24px;
+    width:46px;
+    height:46px;
+    border:none;
+    border-radius:50%;
+    background:#FFF;
+    color:var(--oscuro);
+    font-size:1.1rem;
+    cursor:pointer;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:992px){
+
+    .recetas-grid{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .recetas-lead{
+        max-width:none;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .rx-escenario{
+        aspect-ratio:4/3;
+    }
+
+    .rx-slide img{
+        padding:12px;
+    }
+
+    .rx-flecha{
+        width:38px;
+        height:38px;
+        margin-top:-19px;
+    }
+
+    .rx-prev{left:8px;}
+    .rx-next{right:8px;}
+
+    .rx-pie{
+        padding:18px 18px 20px;
+    }
+
+    .rx-leyenda{
+        min-height:120px;
+    }
+
+    .rx-punto{width:14px;}
+    .rx-punto.activa{width:30px;}
+    .rx-puntos{gap:5px;}
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+    .rx-slide,
+    .rx-slide img,
+    .rx-punto{
+        transition:none;
+    }
+
+    .rx-slide img{
+        transform:none;
+    }
+
+    .rx-leyenda.cambia{
+        animation:none;
+    }
+
+}
+
+
+/*=========================================================
+CAL HCE (insignia), PRÓXIMAMENTE y ajustes del carrusel
+=========================================================*/
+
+.showcase{
+    scroll-margin-top:110px;
+}
+
+#recetas{
+    scroll-margin-top:0;
+}
+
+.recetas-grid.inverso{
+    grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr);
+}
+
+.productos .recetas-grid{
+    margin-top:10px;
+}
+
+.rx-insignia{
+    background:var(--oscuro);
+}
+
+.recetas-etiquetas{
+    flex-wrap:wrap;
+}
+
+.proximamente{
+    background:#FFF;
+}
+
+.productos-grid.dos{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    max-width:980px;
+    margin:0 auto;
+}
+
+.rx-puntos{
+    flex-wrap:wrap;
+    row-gap:7px;
+}
+
+@media(max-width:992px){
+
+    .recetas-grid.inverso{
+        grid-template-columns:1fr;
+    }
+
+    .recetas-grid.inverso .recetas-visor{
+        order:2;
+    }
+
+    .productos-grid.dos{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .rx-punto{width:10px;}
+    .rx-punto.activa{width:26px;}
+    .rx-puntos{gap:5px;}
+
+    .logo img{height:54px;}
+
 }
