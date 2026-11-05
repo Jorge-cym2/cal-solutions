@@ -1675,41 +1675,33 @@ CAL RECETAS LITE (carrusel)
 
 
 /*=========================================================
-CAL HCE (insignia), PRÓXIMAMENTE y ajustes del carrusel
+CAL HCE PREMIUM, MÁS SOLUCIONES Y NOSOTROS
 =========================================================*/
 
-.showcase{
-    scroll-margin-top:110px;
-}
-
-#recetas{
-    scroll-margin-top:0;
-}
+.showcase{scroll-margin-top:110px;}
+.productos .recetas-grid{margin-top:10px;}
 
 .recetas-grid.inverso{
     grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr);
 }
 
-.productos .recetas-grid{
-    margin-top:10px;
-}
+.recetas-etiquetas{flex-wrap:wrap;}
 
 .rx-insignia{
-    background:var(--oscuro);
+    background:linear-gradient(135deg,#0F172A,#1E3A8A);
+    box-shadow:0 8px 20px rgba(15,23,42,.25);
 }
 
-.recetas-etiquetas{
-    flex-wrap:wrap;
+.rx-insignia i{
+    color:#FBBF24;
+    margin-right:4px;
 }
 
-.proximamente{
-    background:#FFF;
-}
-
-.productos-grid.dos{
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    max-width:980px;
-    margin:0 auto;
+.premium-txt{
+    background:linear-gradient(135deg,#1D4ED8,#38BDF8);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
 }
 
 .rx-puntos{
@@ -1717,19 +1709,212 @@ CAL HCE (insignia), PRÓXIMAMENTE y ajustes del carrusel
     row-gap:7px;
 }
 
+/* ---------- Más soluciones ---------- */
+
+.mas{
+    background:#FFF;
+}
+
+.productos-grid.dos{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.mas .producto-img{
+    position:relative;
+    background:#EAF1FB;
+    padding:0;
+}
+
+.mas .producto-img img{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    object-position:center top;
+}
+
+.estado.disponible{
+    background:#16A34A;
+    box-shadow:0 10px 20px rgba(22,163,74,.3);
+}
+
+.estado.desarrollo{
+    background:#F59E0B;
+    box-shadow:0 10px 20px rgba(245,158,11,.3);
+}
+
+.estado i{margin-right:4px;}
+
+.mas .producto-info .btn{
+    margin-top:auto;
+    align-self:flex-start;
+}
+
+/* ---------- Nosotros ---------- */
+
+.nosotros{
+    position:relative;
+    overflow:hidden;
+    color:#fff;
+    background:
+        radial-gradient(900px 500px at 85% 10%,rgba(56,189,248,.18),transparent 60%),
+        radial-gradient(700px 500px at 0% 100%,rgba(37,99,235,.35),transparent 60%),
+        linear-gradient(160deg,#0B1220 0%,#0F1F46 55%,#0B1220 100%);
+}
+
+.nosotros::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+        linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+    background-size:56px 56px;
+    mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 75%);
+    -webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 75%);
+    pointer-events:none;
+}
+
+.nosotros .contenedor{position:relative;}
+
+.nosotros-grid{
+    display:grid;
+    grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+    gap:70px;
+    align-items:center;
+}
+
+.subtitulo-oscuro{
+    background:rgba(255,255,255,.1);
+    color:#93C5FD;
+    border:1px solid rgba(255,255,255,.18);
+}
+
+.nosotros-texto h2{
+    font-size:clamp(2.1rem,4vw,3.1rem);
+    line-height:1.15;
+    margin-bottom:24px;
+}
+
+.nosotros-texto h2 span{
+    display:block;
+    background:linear-gradient(135deg,#60A5FA,#38BDF8);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.nosotros-texto p{
+    color:#CBD5E1;
+    font-size:1.05rem;
+    margin-bottom:16px;
+    max-width:540px;
+}
+
+.nosotros-sellos{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin:28px 0 22px;
+}
+
+.nosotros-sellos span{
+    padding:9px 18px;
+    border-radius:50px;
+    border:1px solid rgba(255,255,255,.2);
+    background:rgba(255,255,255,.06);
+    font-size:.9rem;
+    font-weight:500;
+}
+
+.nosotros-sellos i{
+    color:#60A5FA;
+    margin-right:6px;
+}
+
+.nosotros .nosotros-lema{
+    font-style:italic;
+    color:#94A3B8;
+    border-left:3px solid #2563EB;
+    padding-left:16px;
+    margin:0;
+}
+
+.nosotros-cards{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:20px;
+}
+
+.n-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:22px;
+    padding:28px 24px;
+    backdrop-filter:blur(8px);
+    transition:var(--transicion);
+}
+
+.n-card:hover{
+    transform:translateY(-6px);
+    background:rgba(255,255,255,.1);
+    border-color:rgba(96,165,250,.5);
+    box-shadow:0 25px 50px rgba(0,0,0,.35);
+}
+
+.n-card:nth-child(even){margin-top:30px;}
+.n-card:nth-child(odd){margin-bottom:30px;}
+
+.n-icono{
+    width:50px;
+    height:50px;
+    border-radius:14px;
+    display:grid;
+    place-items:center;
+    font-size:1.2rem;
+    background:linear-gradient(135deg,#2563EB,#38BDF8);
+    box-shadow:0 10px 24px rgba(37,99,235,.45);
+    margin-bottom:18px;
+}
+
+.n-card h3{
+    font-size:1.1rem;
+    margin-bottom:8px;
+}
+
+.n-card p{
+    color:#CBD5E1;
+    font-size:.93rem;
+    line-height:1.65;
+}
+
+/* ---------- Detalles premium generales ---------- */
+
+.titulo h2{
+    letter-spacing:-.5px;
+}
+
+.producto-card:hover{
+    box-shadow:0 30px 70px rgba(37,99,235,.18);
+}
+
+header{
+    transition:box-shadow .3s ease;
+}
+
+header.con-sombra{
+    box-shadow:0 10px 30px rgba(15,23,42,.08);
+}
+
 @media(max-width:992px){
 
-    .recetas-grid.inverso{
-        grid-template-columns:1fr;
-    }
+    .recetas-grid.inverso{grid-template-columns:1fr;}
+    .recetas-grid.inverso .recetas-visor{order:2;}
 
-    .recetas-grid.inverso .recetas-visor{
-        order:2;
-    }
+    .productos-grid.dos{grid-template-columns:1fr;max-width:560px;}
 
-    .productos-grid.dos{
-        grid-template-columns:1fr;
-    }
+    .nosotros-grid{grid-template-columns:1fr;gap:50px;}
 
 }
 
@@ -1741,4 +1926,67 @@ CAL HCE (insignia), PRÓXIMAMENTE y ajustes del carrusel
 
     .logo img{height:54px;}
 
+    .nosotros-cards{grid-template-columns:1fr;}
+    .n-card:nth-child(even),.n-card:nth-child(odd){margin:0;}
+
+}
+
+/* ---------- Corrección de imágenes en tarjetas ---------- */
+
+.mas .producto-img{
+    aspect-ratio:12/7;
+    padding:0;
+    overflow:hidden;
+    background:linear-gradient(135deg,#F8FAFC,#E3ECFB);
+}
+
+.mas .producto-img img,
+.mas .producto-card:hover .producto-img img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center;
+    aspect-ratio:auto;
+}
+
+/* ---------- Logo animado: destello de izquierda a derecha ---------- */
+
+.logo{
+    position:relative;
+    display:inline-block;
+    line-height:0;
+}
+
+.logo::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(105deg,
+        transparent 35%,
+        rgba(255,255,255,.95) 50%,
+        transparent 65%);
+    background-size:250% 100%;
+    background-position:150% 0;
+    -webkit-mask:url("img/logo-cal.png") center/contain no-repeat;
+            mask:url("img/logo-cal.png") center/contain no-repeat;
+    animation:logo-destello 4.5s ease-in-out 1s infinite;
+    pointer-events:none;
+}
+
+.logo img{
+    animation:logo-flota 6s ease-in-out infinite;
+}
+
+@keyframes logo-destello{
+    0%{background-position:150% 0}
+    45%,100%{background-position:-50% 0}
+}
+
+@keyframes logo-flota{
+    0%,100%{transform:translateX(0)}
+    50%{transform:translateX(3px)}
+}
+
+@media (prefers-reduced-motion:reduce){
+    .logo::after,.logo img{animation:none}
 }
