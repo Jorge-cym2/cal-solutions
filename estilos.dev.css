@@ -1990,3 +1990,33 @@ header.con-sombra{
 @media (prefers-reduced-motion:reduce){
     .logo::after,.logo img{animation:none}
 }
+
+
+/* ---------- CAL Agenda ---------- */
+.agenda{padding:100px 0;background:linear-gradient(180deg,#F4F8FF,#fff);}
+.agenda-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center;}
+.agenda-texto h2{font-size:56px;line-height:1.05;margin:14px 0 18px;color:var(--oscuro);}
+.agenda-etiqueta{display:inline-block;background:#16A34A;color:#fff;padding:7px 16px;border-radius:30px;font-size:14px;font-weight:600;}
+.agenda-lead{font-size:18px;line-height:1.6;color:var(--gris);margin-bottom:22px;}
+.agenda-lista{list-style:none;margin:0 0 28px;padding:0;display:grid;gap:12px;}
+.agenda-lista li{display:flex;gap:12px;align-items:center;font-weight:500;color:var(--oscuro);}
+.agenda-lista i{width:36px;height:36px;border-radius:10px;background:var(--azul-claro);color:var(--azul);display:flex;align-items:center;justify-content:center;flex:none;}
+.agenda-botones{display:flex;gap:14px;flex-wrap:wrap;}
+.agenda-visual img{width:100%;border-radius:24px;box-shadow:0 30px 70px rgba(15,42,102,.35);}
+.agenda-planes-titulo{text-align:center;margin:90px 0 36px;}
+.agenda-planes-titulo h3{font-size:36px;color:var(--oscuro);margin:8px 0;}
+.agenda-planes-titulo p{color:var(--gris);}
+.agenda-planes{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch;}
+.plan{position:relative;background:#fff;border:1px solid var(--borde);border-radius:24px;padding:36px 30px;text-align:center;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(15,42,102,.08);transition:var(--transicion);}
+.plan:hover{transform:translateY(-6px);box-shadow:0 22px 50px rgba(37,99,235,.18);}
+.plan.destacado{background:linear-gradient(160deg,#0f2a66,#1d4ed8);color:#fff;border:none;transform:scale(1.04);}
+.plan.destacado:hover{transform:scale(1.04) translateY(-6px);}
+.plan h4{font-size:22px;margin-bottom:10px;}
+.plan .precio{font-size:64px;font-weight:800;line-height:1;margin:6px 0 20px;}
+.plan .precio span{font-size:30px;vertical-align:top;margin-right:2px;}
+.plan .precio small{font-size:18px;font-weight:500;opacity:.7;}
+.plan ul{list-style:none;margin:0 0 26px;padding:0;display:grid;gap:10px;text-align:left;flex:1;}
+.plan li{display:flex;gap:10px;align-items:center;}
+.plan li i{color:#22C55E;}
+.plan-cinta{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,#F59E0B,#FBBF24);color:#1a1200;font-weight:700;font-size:13px;padding:6px 18px;border-radius:20px;}
+@media (max-width:992px){.agenda-grid{grid-template-columns:1fr;}.agenda-planes{grid-template-columns:1fr;max-width:460px;margin:0 auto;}.plan.destacado{transform:none;}.plan.destacado:hover{transform:translateY(-6px);}.agenda-texto h2{font-size:44px;}}
